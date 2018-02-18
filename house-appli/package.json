@@ -1,0 +1,38 @@
+{
+  "name": "house-appli",
+  "version": "1.0.0",
+  "description": "commande pour Léo basée sur React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "stats": "webpack --profile --json > stats.json"
+  },
+  "author": "wmoulin",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-grid-layout": "^0.16.3",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "0.1.13",
+    "css-loader": "0.25.0",
+    "extract-text-webpack-plugin": "1.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "2.22.0",
+    "purifycss-webpack-plugin": "2.0.3",
+    "react-hot-loader": "3.0.0-beta.6",
+    "style-loader": "0.13.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^0.14.1",
+    "webpack-validator": "^3.0.0"
+  }
+}

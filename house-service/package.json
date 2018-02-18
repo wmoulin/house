@@ -1,0 +1,27 @@
+{
+  "name": "house-service",
+  "version": "0.0.1",
+  "description": "My house services",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/js/app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.0.36",
+    "@types/lodash": "^4.14.71",
+    "@types/node": "^8.0.11",
+    "express": "^4.15.3",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.30",
+    "reflect-metadata": "^0.1.10",
+    "threerest": "latest"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.41",
+    "@types/supertest": "^2.0.2",
+    "mocha": "^3.4.2",
+    "supertest": "^3.0.0"
+  }
+}

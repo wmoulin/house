@@ -1,0 +1,38 @@
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.badge--success {
+  background-color:#3fa93f;
+}
+
+.badge--inverse {
+  background-color:#ccc;
+}
+
+.addDevice::before {
+  font-family: "Font Awesome 5 Solid";
+  font-size: 1em;
+  content: "\f067";
+  padding-right: 5px;
+  color:rgb(0, 153, 0)
+}
+
+.menuPanel {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white; /* Black*/
+  border-right: 1px solid black;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  display: flex;
+  flex-direction: column;
+}

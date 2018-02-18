@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "alwaysStrict": true,
+    "traceResolution": true,
+    "experimentalDecorators": true,
+    "sourceMap": true
+  }, 
+  "exclude": [
+      "node_modules/**/*"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}
