@@ -1,5 +1,6 @@
 import React from "react"
 import { Room } from "./room";
+import {Popin } from "./popin";
 
 export class Home extends React.Component {
 
@@ -25,6 +26,7 @@ export class Home extends React.Component {
 
       <div className="flex-container--column">
         {this.renderRooms()}
+        <Popin open={true}/>
       </div>
     )
   }
