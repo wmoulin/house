@@ -1,3 +1,7 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 .material-icons.md-48 { font-size: 48px; }
 
 .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
@@ -58,8 +62,69 @@
   width: 50%;
   height: 50%;
   padding: 16px;
-  border: 16px solid orange;
+  border: none;
+  border-radius: 5px;
   background-color: white;
   z-index: 1002;
   overflow: auto;
+}
+
+.popin_close {
+  right: 0;
+  position: absolute;
+}
+
+button {
+  font-weight: bold;
+  background: transparent !important;
+  color: #91c1f1 !important;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 5px 0px;
+  margin: 0;
+  display: inline-block;
+  border: 0px none;
+  border-bottom: 1px solid #ccc !important;
+  box-sizing: border-box;
+  box-shadow: none;
+  transition: all 0.5s;
+}
+
+input[type=text]:focus, select:focus {
+  outline: none;
+  text-indent: 10px;
+  border-bottom: 1px solid #000 !important;
+  font-weight: bold
+}
+
+.entry {
+  margin: 10px 0px;
+  user-select: none;
+  font-size: small;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.entry input[type=text], select {
+  font-size: large;
+  width: 100%;
+  padding: 5px 0px;
+  margin: 0;
+  display: inline-block;
+  border: 0px none;
+  border-bottom: 1px solid #ccc !important;
+  box-sizing: border-box;
+  box-shadow: none;
+  transition: all 0.5s;
+  background-color: transparent;
+}
+
+.entry input[type=text]:focus, select:focus {
+  outline: none;
+  text-indent: 10px;
+  border-bottom: 1px solid #000 !important;
+  font-weight: bold
 }
