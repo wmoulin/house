@@ -5,6 +5,7 @@ import cssResize from "react-resizable/css/styles";
 import { Room } from "./room";
 import { Home } from "./home";
 import { Menu } from "./menu";
+import { Http } from "../http";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
 export class App extends React.Component {
@@ -12,7 +13,6 @@ export class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {rooms: []};
-
   }
 
   handleClick() {
@@ -25,22 +25,11 @@ export class App extends React.Component {
     })
   }
 
+  componentDidCatch(error, info) {
+    this.setState({ hasError: true , error: error, info: info});
+  }
+
   render() {
-
-    let layout = {"lg":[
-      {i: "1", x: 0, y: 3, w: 1, h: 1},
-      {i: "2", x: 1, y: 2, w: 1, h: 1},
-      {i: "3", x: 2, y: 1, w: 1, h: 1}
-    ],"md":[
-      {i: "1", x: 0, y: 2, w: 1, h: 1},
-      {i: "2", x: 1, y: 1, w: 1, h: 1},
-      {i: "3", x: 2, y: 0, w: 1, h: 1}
-    ],"sm":[
-      {i: "1", x: 0, y: 0, w: 1, h: 1},
-      {i: "2", x: 1, y: 0, w: 1, h: 1},
-      {i: "3", x: 2, y: 0, w: 1, h: 1}
-    ]};
-
     return (
       <div>
 
@@ -70,15 +59,24 @@ export class App extends React.Component {
           {this.renderRooms()}
       </Responsive>*/}
         <div className="flex-container--column">
+          {this.state.hasError && <h1>Something went wrong. {this.state.error}</h1>}
+
           {this.renderRooms()}
         </div>
       </div>
     )
   }
 
+  componentDidMount() {
+    Http.get("rooms")
+    .then((data) => {
+      this.setState({rooms: data});
+    })
+  }
+
   renderRooms() {
    return this.state.rooms.map((room, index)=> {
-      return (<Room label={room.label} key={index+1}/>)
+      return (<Room name={room.name} key={room._id} roomID={room._id} devicesId={room.devicesId}/>)
     });
   }
 

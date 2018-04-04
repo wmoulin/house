@@ -79,7 +79,6 @@ export class Injector {
                     Injector.registry[id as string] = new value();
                     break;
                 case Scope.PROTOTYPE:
-                    console.log("3", new value());
                     Object.defineProperty(Injector.registry, id as string, {
                         get : () => { return new value(); }, configurable: true})
                     break;

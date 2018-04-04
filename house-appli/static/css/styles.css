@@ -18,14 +18,6 @@
   background-color:#ccc;
 }
 
-.addDevice::before {
-  font-family: "Font Awesome 5 Solid";
-  font-size: 1em;
-  content: "\f067";
-  padding-right: 5px;
-  color:rgb(0, 153, 0)
-}
-
 .menuPanel {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */

@@ -1,30 +1,36 @@
-import { Service, Methods } from "threerest";
+import { Service, Methods, NotFoundError } from "threerest";
+import { inject } from "../../inject/inject";
+import { DB_NAME } from "../../app-const";
+import { Injector } from "../../inject/injector";
+import { ObjectID } from "mongodb";
 
-@Service.path("/device")
+@Service.path("/devices")
 export default class DeviceService {
 
-  private devices:Array<Device>;
+  private collection:any;
 
   constructor() {
-    this.devices = [];
-    this.devices.push(new Device(0, "device_light_" + 0, TYPE.LIGHT));
-    this.devices.push(new Device(1, "device_plug_" + 0, TYPE.PLUG));
-    this.devices.push(new Device(2, "device_shutter_" + 0, TYPE.SHUTTER));
+    this.collection = Injector.getRegistered(DB_NAME).collection("devices");
   }
 
   @Methods.get("")
   getAll() {
-    return this.devices;
+    return this.collection.find({}).toArray();
   }
 
   @Methods.post("")
-  add(param:{device:Device}) {
-    this.devices.push(new Device(this.devices.length, param.device.name, param.device.type));
+  add(device:Device) {
+    return this.collection.insertOne(device).then( result => result.ops[0]);
   }
 
   @Methods.get("/:id")
   get(param:{id:number}) {
-    return this.devices[param.id];
+    return this.collection.findOne({_id: new ObjectID(param.id)}).then((device)=>{if (!device) throw new NotFoundError(); return device;});
+  }
+
+  @Methods.del("/:id")
+  delete(param:{id:number}) {
+    return this.collection.deleteOne({_id: new ObjectID(param.id)}).then((device)=>{if (!device) throw new NotFoundError(); return device;});
   }
 }
 
