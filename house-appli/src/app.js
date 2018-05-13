@@ -24,7 +24,8 @@ MongoClient.connect(DB_URL, function(err, client) {
   Injector.register(DB_NAME, client/*.db(DB_NAME)*/);
  
   //db.close();
-  var app:express.Application = express(); 
+  var app = express();
+  app.use(express.static("public"))
   app.use(bodyParser.json({}));
 
   app.disable('x-powered-by');
@@ -36,7 +37,6 @@ MongoClient.connect(DB_URL, function(err, client) {
     }
   }));
   app.use(cors());
-  
 
   
   // load the service Test 

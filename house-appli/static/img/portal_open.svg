@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with FreeCAD (http://www.freecadweb.org) -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+     version="1.1" baseProfile="full"
+>
+
+<style type="text/css" media="screen">  
+    <![CDATA[  
+    .portal-foreground {  
+        fill: black;  
+        stroke: black;  
+    }
+    .portal-open {  
+        width: 277px;
+        height: 190px;
+    }
+    ]]>  
+</style> 
+<defs>
+<symbol id="portal-open" class="portal-open" viewBox="0 0 277 190" preserveAspectRatio="xMidYMid meet">
+<path class="portal-foreground" d="M 180.887,115.236 L 180.256,139.69 180.887,139.611 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.887,66.4872 L 180.256,115.26 180.887,115.236 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.887,58.3623 L 180.256,66.3992 180.887,66.4872 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.256,115.26 L 180.256,139.69 180.887,115.236 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.256,66.3992 L 180.256,115.26 180.887,66.4872 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.256,58.2558 L 180.256,66.3992 180.887,58.3623 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 103.61,58.2654 L 103.61,66.4072 104.214,66.3188 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 103.61,66.4072 L 103.61,115.258 104.214,115.281 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 103.61,115.258 L 103.61,139.683 104.214,139.762 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 104.214,58.1584 L 103.61,58.2654 104.214,66.3188 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 104.214,66.3188 L 103.61,66.4072 104.214,115.281 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 104.214,115.281 L 103.61,115.258 104.214,139.762 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.887,139.611 L 186.447,115.657 180.887,115.236 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.887,115.236 L 186.447,64.905 180.887,66.4872 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.887,66.4872 L 186.447,56.4464 180.887,58.3623 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.256,139.69 L 185.803,141.118 180.887,139.611 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.256,58.2558 L 180.887,58.3623 185.803,56.331 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 103.61,66.4072 L 103.61,58.2654 97.523,64.8183 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 103.61,115.258 L 103.61,66.4072 97.523,115.68 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 103.61,139.683 L 103.61,115.258 97.523,141.111 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.256,139.69 L 180.256,115.26 185.803,115.682 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.256,115.26 L 180.256,66.3992 185.803,64.8097 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.256,66.3992 L 180.256,58.2558 185.803,56.331 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 98.1374,56.2254 L 103.61,58.2654 104.214,58.1584 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 98.1374,141.197 L 104.214,139.762 103.61,139.683 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 104.214,66.3188 L 98.1374,64.7225 104.214,58.1584 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 104.214,139.762 L 98.1374,141.197 104.214,115.281 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 104.214,115.281 L 98.1374,115.705 104.214,66.3188 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 186.447,141.033 L 186.447,115.657 180.887,139.611 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 186.447,115.657 L 186.447,64.905 180.887,115.236 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 186.447,64.905 L 186.447,56.4464 180.887,66.4872 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.887,139.611 L 185.803,141.118 186.447,141.033 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 180.887,58.3623 L 186.447,56.4464 185.803,56.331 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 97.523,64.8183 L 103.61,58.2654 97.523,56.3413 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 97.523,115.68 L 103.61,66.4072 97.523,64.8183 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 97.523,141.111 L 103.61,115.258 97.523,115.68 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 185.803,141.118 L 180.256,139.69 185.803,115.682 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 185.803,115.682 L 180.256,115.26 185.803,64.8097 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 185.803,64.8097 L 180.256,66.3992 185.803,56.331 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 98.1374,56.2254 L 97.523,56.3413 103.61,58.2654 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 98.1374,141.197 L 103.61,139.683 97.523,141.111 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 98.1374,64.7225 L 98.1374,56.2254 104.214,58.1584 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 98.1374,141.197 L 98.1374,115.705 104.214,115.281 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 98.1374,115.705 L 98.1374,64.7225 104.214,66.3188 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 186.447,64.905 L 186.447,115.657 185.803,115.682 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 185.803,64.8097 L 186.447,64.905 185.803,115.682 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 97.523,64.8183 L 98.1374,115.705 97.523,115.68 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 98.1374,64.7225 L 98.1374,115.705 97.523,64.8183 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 186.447,141.033 L 192.483,116.113 186.447,115.657 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 186.447,64.905 L 192.483,54.3663 186.447,56.4464 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 185.803,141.118 L 192.483,142.576 186.447,141.033 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 185.803,115.682 L 186.447,115.657 192.483,116.113 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 185.803,64.8097 L 192.483,63.1873 186.447,64.905 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 185.803,56.331 L 186.447,56.4464 192.483,54.3663 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 97.523,64.8183 L 97.523,56.3413 90.9139,54.252 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 97.523,141.111 L 97.523,115.68 90.9139,142.661 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 185.803,64.8097 L 185.803,56.331 191.826,54.2408 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 191.826,142.67 L 185.803,141.118 185.803,115.682 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,54.1259 L 97.523,56.3413 98.1374,56.2254 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,62.9888 L 98.1374,64.7225 97.523,64.8183 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,142.755 L 98.1374,141.197 97.523,141.111 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,116.166 L 97.523,115.68 98.1374,115.705 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 98.1374,64.7225 L 91.5383,54.1259 98.1374,56.2254 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 98.1374,141.197 L 91.5383,142.755 98.1374,115.705 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 192.483,142.576 L 192.483,116.113 186.447,141.033 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 192.483,63.1873 L 192.483,54.3663 186.447,64.905 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 185.803,141.118 L 191.826,142.67 192.483,142.576 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 185.803,115.682 L 192.483,116.113 191.826,116.141 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 185.803,64.8097 L 191.826,63.0836 192.483,63.1873 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 185.803,56.331 L 192.483,54.3663 191.826,54.2408 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 97.523,64.8183 L 90.9139,54.252 90.9139,63.093 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 90.9139,142.661 L 97.523,115.68 90.9139,116.138 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 191.826,142.67 L 185.803,115.682 191.826,116.141 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 191.826,63.0836 L 185.803,64.8097 191.826,54.2408 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,54.1259 L 90.9139,54.252 97.523,56.3413 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,62.9888 L 97.523,64.8183 90.9139,63.093 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,142.755 L 97.523,141.111 90.9139,142.661 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,116.166 L 90.9139,116.138 97.523,115.68 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 98.1374,64.7225 L 91.5383,62.9888 91.5383,54.1259 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,142.755 L 91.5383,116.166 98.1374,115.705 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 192.483,63.1873 L 191.826,116.141 192.483,116.113 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 191.826,63.0836 L 191.826,116.141 192.483,63.1873 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 90.9139,63.093 L 90.9139,116.138 91.5383,116.166 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,62.9888 L 90.9139,63.093 91.5383,116.166 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 192.483,142.576 L 199.059,116.611 192.483,116.113 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 192.483,116.113 L 199.059,61.3159 192.483,63.1873 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 192.483,63.1873 L 199.059,52.1 192.483,54.3663 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 191.826,142.67 L 198.39,144.36 192.483,142.576 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 191.826,54.2408 L 192.483,54.3663 198.39,51.963 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 90.9139,63.093 L 90.9139,54.252 83.7116,61.2129 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 90.9139,116.138 L 90.9139,63.093 83.7116,116.638 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 90.9139,142.661 L 90.9139,116.138 83.7116,116.638 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 191.826,142.67 L 191.826,116.141 198.39,116.641 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 191.826,116.141 L 191.826,63.0836 198.39,61.2027 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 191.826,63.0836 L 191.826,54.2408 198.39,51.963 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 84.3455,51.8376 L 90.9139,54.252 91.5383,54.1259 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 84.3455,144.453 L 91.5383,142.755 90.9139,142.661 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,62.9888 L 84.3455,61.0991 91.5383,54.1259 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,116.166 L 84.3455,116.668 91.5383,62.9888 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,142.755 L 84.3455,116.668 91.5383,116.166 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 199.059,144.258 L 199.059,116.611 192.483,142.576 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 199.059,116.611 L 199.059,61.3159 192.483,116.113 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 199.059,61.3159 L 199.059,52.1 192.483,63.1873 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 192.483,142.576 L 198.39,144.36 199.059,144.258 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 192.483,54.3663 L 199.059,52.1 198.39,51.963 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 83.7116,61.2129 L 90.9139,54.252 83.7116,51.9753 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 83.7116,116.638 L 90.9139,63.093 83.7116,61.2129 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 90.9139,142.661 L 83.7116,116.638 83.7116,144.351 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 198.39,144.36 L 191.826,142.67 198.39,116.641 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 198.39,116.641 L 191.826,116.141 198.39,61.2027 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 198.39,61.2027 L 191.826,63.0836 198.39,51.963 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 84.3455,51.8376 L 83.7116,51.9753 90.9139,54.252 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 84.3455,144.453 L 90.9139,142.661 83.7116,144.351 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 91.5383,142.755 L 84.3455,144.453 84.3455,116.668 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 84.3455,61.0991 L 84.3455,51.8376 91.5383,54.1259 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 84.3455,116.668 L 84.3455,61.0991 91.5383,62.9888 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 199.059,61.3159 L 199.059,116.611 198.39,116.641 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 198.39,61.2027 L 199.059,61.3159 198.39,116.641 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 83.7116,61.2129 L 84.3455,116.668 83.7116,116.638 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 84.3455,61.0991 L 84.3455,116.668 83.7116,61.2129 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 199.059,144.258 L 206.252,117.155 199.059,116.611 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 206.252,59.269 L 199.059,52.1 199.059,61.3159 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 198.39,144.36 L 205.571,146.209 199.059,144.258 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 198.39,116.641 L 199.059,116.611 205.571,117.188 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 198.39,61.2027 L 205.571,59.145 199.059,61.3159 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 198.39,51.963 L 199.059,52.1 205.571,49.4712 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 83.7116,61.2129 L 83.7116,51.9753 75.8328,59.1561 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 83.7116,144.351 L 83.7116,116.638 75.8328,146.199 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 198.39,144.36 L 198.39,116.641 205.571,117.188 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 205.571,59.145 L 198.39,61.2027 198.39,51.963 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,49.3337 L 83.7116,51.9753 84.3455,51.8376 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,59.0314 L 84.3455,61.0991 83.7116,61.2129 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,146.311 L 84.3455,144.453 83.7116,144.351 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,117.218 L 83.7116,116.638 84.3455,116.668 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 84.3455,61.0991 L 76.4751,59.0314 84.3455,51.8376 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 84.3455,144.453 L 76.4751,146.311 84.3455,116.668 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 206.252,146.098 L 206.252,117.155 199.059,144.258 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 206.252,59.269 L 206.252,49.6214 199.059,52.1 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 199.059,144.258 L 205.571,146.209 206.252,146.098 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 199.059,116.611 L 206.252,117.155 205.571,117.188 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 199.059,61.3159 L 205.571,59.145 206.252,59.269 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 199.059,52.1 L 206.252,49.6214 205.571,49.4712 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 75.8328,59.1561 L 83.7116,51.9753 75.8328,49.4847 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 75.8328,146.199 L 83.7116,116.638 75.8328,117.185 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 205.571,146.209 L 198.39,144.36 205.571,117.188 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 205.571,59.145 L 198.39,51.963 205.571,49.4712 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,49.3337 L 75.8328,49.4847 83.7116,51.9753 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,59.0314 L 83.7116,61.2129 75.8328,59.1561 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,146.311 L 83.7116,144.351 75.8328,146.199 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,117.218 L 75.8328,117.185 83.7116,116.638 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,59.0314 L 76.4751,49.3337 84.3455,51.8376 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,146.311 L 76.4751,117.218 84.3455,116.668 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 206.252,59.269 L 205.571,117.188 206.252,117.155 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 205.571,59.145 L 205.571,117.188 206.252,59.269 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 75.8328,59.1561 L 75.8328,117.185 76.4751,117.218 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,59.0314 L 75.8328,59.1561 76.4751,117.218 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 214.152,148.118 L 206.252,117.155 206.252,146.098 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 206.252,117.155 L 214.152,57.0209 206.252,59.269 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 206.252,59.269 L 214.152,46.899 206.252,49.6214 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 205.571,146.209 L 213.46,148.241 206.252,146.098 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 205.571,49.4712 L 206.252,49.6214 213.46,46.7337 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 75.8328,59.1561 L 75.8328,49.4847 67.1774,56.8966 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 75.8328,117.185 L 75.8328,59.1561 67.1774,117.785 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 75.8328,146.199 L 75.8328,117.185 67.1774,117.785 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 205.571,146.209 L 205.571,117.188 213.46,117.789 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 205.571,117.188 L 205.571,59.145 213.46,56.8844 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 205.571,59.145 L 205.571,49.4712 213.46,46.7337 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.8267,46.5823 L 75.8328,49.4847 76.4751,49.3337 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.8267,148.353 L 76.4751,146.311 75.8328,146.199 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,59.0314 L 67.8267,56.7594 76.4751,49.3337 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,117.218 L 67.8267,117.822 76.4751,59.0314 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,146.311 L 67.8267,117.822 76.4751,117.218 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 214.152,148.118 L 214.152,117.752 206.252,117.155 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 214.152,117.752 L 214.152,57.0209 206.252,117.155 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 214.152,57.0209 L 214.152,46.899 206.252,59.269 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 206.252,146.098 L 213.46,148.241 214.152,148.118 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 206.252,49.6214 L 214.152,46.899 213.46,46.7337 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.1774,56.8966 L 75.8328,49.4847 67.1774,46.7485 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.1774,117.785 L 75.8328,59.1561 67.1774,56.8966 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 75.8328,146.199 L 67.1774,117.785 67.1774,148.23 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 213.46,148.241 L 205.571,146.209 213.46,117.789 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 213.46,117.789 L 205.571,117.188 213.46,56.8844 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 213.46,56.8844 L 205.571,59.145 213.46,46.7337 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.8267,46.5823 L 67.1774,46.7485 75.8328,49.4847 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.8267,148.353 L 75.8328,146.199 67.1774,148.23 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.8267,56.7594 L 67.8267,46.5823 76.4751,49.3337 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.8267,117.822 L 67.8267,56.7594 76.4751,59.0314 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 76.4751,146.311 L 67.8267,148.353 67.8267,117.822 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 214.152,57.0209 L 214.152,117.752 213.46,117.789 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 213.46,56.8844 L 214.152,57.0209 213.46,117.789 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.1774,56.8966 L 67.8267,117.822 67.1774,117.785 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.8267,56.7594 L 67.8267,117.822 67.1774,56.8966 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 214.152,148.118 L 222.868,118.412 214.152,117.752 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 214.152,57.0209 L 222.868,43.8952 214.152,46.899 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 213.46,148.241 L 222.868,150.347 214.152,148.118 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 213.46,117.789 L 214.152,117.752 222.868,118.412 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 213.46,56.8844 L 222.868,54.5404 214.152,57.0209 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 213.46,46.7337 L 214.152,46.899 222.868,43.8952 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.1774,56.8966 L 67.1774,46.7485 57.6246,54.4029 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.1774,148.23 L 67.1774,117.785 57.6246,150.471 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 213.46,148.241 L 213.46,117.789 222.166,118.452 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.166,54.3893 L 213.46,56.8844 213.46,46.7337 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,43.5448 L 67.1774,46.7485 67.8267,46.5823 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,54.251 L 67.8267,56.7594 67.1774,56.8966 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,150.607 L 67.8267,148.353 67.1774,148.23 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,118.489 L 67.1774,117.785 67.8267,117.822 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.8267,56.7594 L 58.2789,54.251 67.8267,46.5823 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 67.8267,148.353 L 58.2789,150.607 67.8267,117.822 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.868,150.347 L 222.868,118.412 214.152,148.118 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.868,54.5404 L 222.868,43.8952 214.152,57.0209 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 213.46,148.241 L 222.166,150.483 222.868,150.347 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 213.46,117.789 L 222.868,118.412 222.166,118.452 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 213.46,56.8844 L 222.166,54.3893 222.868,54.5404 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 213.46,46.7337 L 222.868,43.8952 222.166,43.7123 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 57.6246,54.4029 L 67.1774,46.7485 57.6246,43.7287 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 57.6246,150.471 L 67.1774,117.785 57.6246,118.448 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.166,150.483 L 213.46,148.241 222.166,118.452 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.166,54.3893 L 213.46,46.7337 222.166,43.7123 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,43.5448 L 57.6246,43.7287 67.1774,46.7485 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,54.251 L 67.1774,56.8966 57.6246,54.4029 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,150.607 L 67.1774,148.23 57.6246,150.471 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,118.489 L 57.6246,118.448 67.1774,117.785 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,54.251 L 58.2789,43.5448 67.8267,46.5823 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,150.607 L 58.2789,118.489 67.8267,117.822 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.868,54.5404 L 222.166,118.452 222.868,118.412 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.166,54.3893 L 222.166,118.452 222.868,54.5404 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 57.6246,54.4029 L 57.6246,118.448 58.2789,118.489 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,54.251 L 57.6246,54.4029 58.2789,118.489 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.868,150.347 L 232.536,119.143 222.868,118.412 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.868,118.412 L 232.536,51.7894 222.868,54.5404 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.868,54.5404 L 232.536,40.5638 222.868,43.8952 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.166,150.483 L 232.536,152.82 222.868,150.347 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.166,43.7123 L 222.868,43.8952 232.536,40.5638 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 57.6246,54.4029 L 57.6246,43.7287 47.0271,51.6365 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 57.6246,118.448 L 57.6246,54.4029 47.0271,119.183 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 57.6246,150.471 L 57.6246,118.448 47.0271,119.183 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,152.971 L 222.166,150.483 222.166,118.452 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.166,118.452 L 222.166,54.3893 231.826,51.6214 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.166,54.3893 L 222.166,43.7123 231.826,40.3604 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.6838,40.174 L 57.6246,43.7287 58.2789,43.5448 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.6838,153.109 L 58.2789,150.607 57.6246,150.471 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,54.251 L 47.6838,51.4675 58.2789,43.5448 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,118.489 L 47.6838,119.228 58.2789,54.251 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,150.607 L 47.6838,119.228 58.2789,118.489 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 232.536,152.82 L 232.536,119.143 222.868,150.347 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 232.536,119.143 L 232.536,51.7894 222.868,118.412 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 232.536,51.7894 L 232.536,40.5638 222.868,54.5404 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.166,150.483 L 231.826,152.971 232.536,152.82 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 222.166,43.7123 L 232.536,40.5638 231.826,40.3604 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 57.6246,150.471 L 47.0271,119.183 47.0271,152.957 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.0271,51.6365 L 57.6246,43.7287 47.0271,40.3786 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.0271,119.183 L 57.6246,54.4029 47.0271,51.6365 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,152.971 L 222.166,118.452 231.826,119.188 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,119.188 L 222.166,118.452 231.826,51.6214 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,51.6214 L 222.166,54.3893 231.826,40.3604 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.6838,40.174 L 47.0271,40.3786 57.6246,43.7287 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.6838,153.109 L 57.6246,150.471 47.0271,152.957 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.6838,51.4675 L 47.6838,40.174 58.2789,43.5448 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.6838,119.228 L 47.6838,51.4675 58.2789,54.251 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 58.2789,150.607 L 47.6838,153.109 47.6838,119.228 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 232.536,51.7894 L 232.536,119.143 231.826,119.188 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,51.6214 L 232.536,51.7894 231.826,119.188 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.0271,51.6365 L 47.6838,119.228 47.0271,119.183 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.6838,51.4675 L 47.6838,119.228 47.0271,51.6365 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 232.536,152.82 L 243.318,119.958 232.536,119.143 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 243.318,48.7211 L 232.536,40.5638 232.536,51.7894 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,152.971 L 243.318,155.577 232.536,152.82 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,119.188 L 232.536,119.143 243.318,119.958 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,51.6214 L 243.318,48.7211 232.536,51.7894 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,40.3604 L 232.536,40.5638 243.318,36.8482 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.0271,51.6365 L 47.0271,40.3786 35.2037,48.55 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.0271,152.957 L 47.0271,119.183 35.2037,120.004 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,152.971 L 231.826,119.188 242.603,120.008 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,51.6214 L 231.826,40.3604 242.603,36.6206 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,36.412 L 47.0271,40.3786 47.6838,40.174 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,48.3609 L 47.6838,51.4675 47.0271,51.6365 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,155.901 L 47.6838,153.109 47.0271,152.957 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,120.054 L 47.0271,119.183 47.6838,119.228 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.6838,51.4675 L 35.8589,48.3609 47.6838,40.174 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.6838,153.109 L 35.8589,155.901 47.6838,119.228 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 243.318,155.577 L 243.318,119.958 232.536,152.82 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 243.318,48.7211 L 243.318,36.8482 232.536,40.5638 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,152.971 L 242.603,155.746 243.318,155.577 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,119.188 L 243.318,119.958 242.603,120.008 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,51.6214 L 242.603,48.5331 243.318,48.7211 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 231.826,40.3604 L 243.318,36.8482 242.603,36.6206 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.2037,48.55 L 47.0271,40.3786 35.2037,36.6411 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 47.0271,152.957 L 35.2037,120.004 35.2037,155.731 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 242.603,155.746 L 231.826,152.971 242.603,120.008 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 242.603,48.5331 L 231.826,51.6214 242.603,36.6206 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,36.412 L 35.2037,36.6411 47.0271,40.3786 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,48.3609 L 47.0271,51.6365 35.2037,48.55 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,155.901 L 47.0271,152.957 35.2037,155.731 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,120.054 L 35.2037,120.004 47.0271,119.183 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,48.3609 L 35.8589,36.412 47.6838,40.174 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,155.901 L 35.8589,120.054 47.6838,119.228 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 243.318,48.7211 L 242.603,120.008 243.318,119.958 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 242.603,48.5331 L 242.603,120.008 243.318,48.7211 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.2037,48.55 L 35.2037,120.004 35.8589,120.054 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,48.3609 L 35.2037,48.55 35.8589,120.054 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 243.318,155.577 L 255.419,120.874 243.318,119.958 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 243.318,119.958 L 255.419,45.2773 243.318,48.7211 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 243.318,48.7211 L 255.419,32.678 243.318,36.8482 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 242.603,36.6206 L 243.318,36.8482 255.419,32.678 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 242.603,155.746 L 254.703,158.862 243.318,155.577 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.2037,48.55 L 35.2037,36.6411 21.9288,45.0846 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.2037,120.004 L 35.2037,48.55 21.9288,120.925 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.2037,155.731 L 35.2037,120.004 21.9288,120.925 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 254.703,158.862 L 242.603,155.746 242.603,120.008 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 242.603,120.008 L 242.603,48.5331 254.703,45.0656 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 242.603,48.5331 L 242.603,36.6206 254.703,32.4216 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 22.5771,32.1865 L 35.2037,36.6411 35.8589,36.412 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 22.5771,159.037 L 35.8589,155.901 35.2037,155.731 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,48.3609 L 22.5771,44.8715 35.8589,36.412 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,120.054 L 22.5771,120.982 35.8589,48.3609 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.8589,155.901 L 22.5771,159.037 35.8589,120.054 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 255.419,158.672 L 255.419,120.874 243.318,155.577 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 255.419,120.874 L 255.419,45.2773 243.318,119.958 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 255.419,45.2773 L 255.419,32.678 243.318,48.7211 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 243.318,155.577 L 254.703,158.862 255.419,158.672 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 242.603,36.6206 L 255.419,32.678 254.703,32.4216 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 21.9288,45.0846 L 35.2037,36.6411 21.9288,32.4446 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 21.9288,120.925 L 35.2037,48.55 21.9288,45.0846 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 35.2037,155.731 L 21.9288,120.925 21.9288,158.845 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 254.703,158.862 L 242.603,120.008 254.703,120.93 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 254.703,120.93 L 242.603,120.008 254.703,45.0656 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 254.703,45.0656 L 242.603,48.5331 254.703,32.4216 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 22.5771,32.1865 L 21.9288,32.4446 35.2037,36.6411 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 22.5771,159.037 L 35.2037,155.731 21.9288,158.845 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 22.5771,44.8715 L 22.5771,32.1865 35.8589,36.412 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 22.5771,120.982 L 22.5771,44.8715 35.8589,48.3609 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 22.5771,159.037 L 22.5771,120.982 35.8589,120.054 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 255.419,120.874 L 255.419,158.672 254.703,158.862 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 255.419,45.2773 L 255.419,120.874 254.703,120.93 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 254.703,32.4216 L 255.419,32.678 255.419,45.2773 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 254.703,120.93 L 255.419,120.874 254.703,158.862 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 254.703,45.0656 L 255.419,45.2773 254.703,120.93 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 254.703,32.4216 L 255.419,45.2773 254.703,45.0656 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 21.9288,32.4446 L 22.5771,44.8715 21.9288,45.0846 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 21.9288,45.0846 L 22.5771,120.982 21.9288,120.925 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 21.9288,120.925 L 22.5771,159.037 21.9288,158.845 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 22.5771,32.1865 L 22.5771,44.8715 21.9288,32.4446 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 22.5771,44.8715 L 22.5771,120.982 21.9288,45.0846 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+<path class="portal-foreground" d="M 22.5771,120.982 L 22.5771,159.037 21.9288,120.925 z"
+    style="
+    stroke-width:1.0;
+    stroke-linecap:round;stroke-linejoin:round"/>
+</symbol>
+</defs>
+</svg>

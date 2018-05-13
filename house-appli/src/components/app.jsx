@@ -13,6 +13,12 @@ export class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {rooms: []};
+    let eventSource = new EventSource('http://localhost:4000/updates');
+ 
+    eventSource.addEventListener('connected', (e) => {
+        console.log(e.data);
+        // => Hello world! 
+    });
   }
 
   handleClick() {

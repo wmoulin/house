@@ -1,0 +1,132 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Léo et Léa</title>
+  <link rel="stylesheet" href="/css/knacss.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style type="text/css">.react-grid-layout {
+  position: relative;
+  transition: height 200ms ease;
+}
+.react-grid-item {
+  transition: all 200ms ease;
+  transition-property: left, top;
+}
+.react-grid-item.cssTransforms {
+  transition-property: transform;
+}
+.react-grid-item.resizing {
+  z-index: 1;
+  will-change: width, height;
+}
+
+.react-grid-item.react-draggable-dragging {
+  transition: none;
+  z-index: 3;
+  will-change: transform;
+}
+
+.react-grid-item.react-grid-placeholder {
+  background: red;
+  opacity: 0.2;
+  transition-duration: 100ms;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.react-grid-item > .react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+.react-grid-item > .react-resizable-handle::after {
+  content: "";
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+</style><style type="text/css">.react-resizable {
+  position: relative;
+}
+.react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  right: 0;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2IDYiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYwMCIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iNnB4Ij48ZyBvcGFjaXR5PSIwLjMwMiI+PHBhdGggZD0iTSA2IDYgTCAwIDYgTCAwIDQuMiBMIDQgNC4yIEwgNC4yIDQuMiBMIDQuMiAwIEwgNiAwIEwgNiA2IEwgNiA2IFoiIGZpbGw9IiMwMDAwMDAiLz48L2c+PC9zdmc+');
+  background-position: bottom right;
+  padding: 0 3px 3px 0;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  cursor: se-resize;
+}
+
+.astuce:before {
+  content:url(../../../model/portal/poartal.svg);
+  background-image: url(../../../model/portal/poartal.svg);
+    background-size: 200px 100px;
+    display: inline-block;
+    width: 200px; 
+    height: 100px;
+    content:"";
+}
+.foreground.portal-foreground {
+  stroke: #00f000;
+  fill: #00f000;
+}
+
+path {
+  stroke: #00f000;
+  fill: #00f000;
+}
+
+</style></head>
+
+<body>
+  <div id="app"><div><div><div class="flex-container" style="flex-direction: row;"><div class="menuPanel" style="width: 0px;"><button type="button" class="popin_close">Close</button><a href="/rooms" style="margin: 50px 0px;"><button class="btn">Ajouter une pièce</button></a></div><i class="fa-3x fas fa-bars" id="menu" style="padding: 10px;"></i><a class=" item-fluid" href="/" style="text-align: center; margin: 10px 0px;"><i class="fa-3x fas fa-home"></i></a><a href="/rooms/1" style="margin: 10px;"><i class="fa-3x fas fas fa-user"></i></a></div><hr><div class="flex-container--column"></div></div><div class="flex-container--column"><div class="flex-container--column" style="border-bottom: 1px solid black;"><label>5ac54dbfadb1810fb107e88d</label><div class="flex-container" style="flex-direction: row;"><label class="item-center" style="font-size: 3em;">chambre 1</label><i class="fa-2x fas fa-pencil-alt" style="color: rgb(0, 153, 0); margin: 10px; vertical-align: top;"></i></div></div><button class="btn">Ajouter un device</button><div class="flex-container--column" style="border-bottom: 1px solid black;"><div class="flex-container" style="flex-direction: row;"><div class="flex-container--column item-fluid" style="margin: 20px;"><label class="item-center" style="font-size: 2em;">veilleuse</label><i class="fa-5x item-center fas fa-lightbulb" style="color: rgb(0, 153, 0);"></i></div><div class="" style="vertical-align: bottom; display: inline; width: 40px; position: relative; margin: 30px 10px;"><i class="fa-2x fas fa-pencil-alt" style="color: rgb(0, 153, 0); position: absolute; top: 0px;"></i><i class="fa-2x fas fa-trash-alt item-fluid" style="position: absolute; bottom: 0px;"></i></div></div></div></div></div></div>
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    
+    ga('create', 'UA-86991531-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+<!-- <script type="text/javascript" src="/static/js/client.js"></script> -->
+<script type="text/javascript" src="/static/static/js/client.js"></script>
+
+
+</body>
+<img src="../../../model/portal/poartal.svg" class="svg-inject" alt="signal" />
+<object type="image/svg+xml" data="../../../model/portal/portal.svg">
+  Le navigateur ne peut lire ce kiwi
+</object>
+<svg viewBox="0 0 200 200" class="icon shape-codepen">
+  <use xlink:href="http://localhost:4000/img/portal.svg#foreground"></use>
+</svg>
+</html>

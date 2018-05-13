@@ -7,15 +7,20 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
     "build": "webpack",
-    "stats": "webpack --profile --json > stats.json"
+    "stats": "webpack --profile --json > stats.json",
+    "server": "node ./server.js"
   },
   "author": "wmoulin",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.3",
+    "express-sse": "^0.5.0",
+    "mqtt": "^2.17.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-grid-layout": "^0.16.3",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^4.2.2",
+    "superagent": "^3.8.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -30,7 +35,7 @@
     "purifycss-webpack-plugin": "2.0.3",
     "react-hot-loader": "3.0.0-beta.6",
     "style-loader": "0.13.1",
-    "webpack": "^3.10.0",
+    "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1",
     "webpack-merge": "^0.14.1",
     "webpack-validator": "^3.0.0"

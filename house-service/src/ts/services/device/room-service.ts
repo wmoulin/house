@@ -9,10 +9,12 @@ export default class RoomService {
 
   private rooms:Array<Room>;
   private collection:any;
+  private devicesCollection:any;
 
 
   constructor() {
     this.collection = Injector.getRegistered(DB_NAME).collection("rooms");
+    this.devicesCollection = Injector.getRegistered(DB_NAME).collection("devices");
   }
 
   @Methods.get("")
@@ -47,7 +49,14 @@ export default class RoomService {
 
   @Methods.del("/:id")
   delete(param:{id:number}) {
-    return this.collection.deleteOne({_id: new ObjectID(param.id)}).then((room)=>{if (!room) throw new NotFoundError(); return room;});
+    return this.collection.deleteOne({_id: new ObjectID(param.id)})
+    .then((room)=>{if (!room) throw new NotFoundError();
+      return this.collection.deleteMany({_id: new ObjectID(param.id)})
+      .then((device)=>{
+        if (!device) throw new NotFoundError();
+        return room;
+      });
+    });
   }
 
   @Methods.get("/:id/devices")

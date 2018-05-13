@@ -52,10 +52,14 @@ export class Room extends React.Component {
               {this.state.devices.map(device => {
                 let props = {
                   name: device.name,
+                  type: device.type,
                   deviceId: device._id,
+                  customId: device.customId,
+                  active: device.active,
                   edit: !device._id,
                   validate: this.validDevice.bind(this),
-                  discard: this.cancelDevice.bind(this)
+                  discard: this.cancelDevice.bind(this),
+                  delete: this.deleteDevice.bind(this)
                 };
                 if(device.type == 1) {
                   return (<Light {...props} />);
@@ -110,24 +114,32 @@ export class Room extends React.Component {
   loadDevices() {
     let devices = [];
     let p = Promise.resolve(true);
-    if(this.props.devicesId) {
-      this.props.devicesId.forEach((id) => {
-        p = p.then(() => {return this.getDevice(id).then((device) => {devices.push(device);})});
+    if(this.props.roomID) {
+      Http.get("devices?roomId=" + this.props.roomID)
+      .then((data) => {
+        this.setState({devices: data})
       });
-      p = p.then(() => {this.setState({devices: devices})});
     }
   }
 
   validDevice(device) {
-    if (!device.id) {
+    if (!device._id) {
+      device.roomId = this.props.roomID;
       return Http.post("devices", device)
       .then((data) => {
-        Http.patch("rooms/" + this.state.roomID, {devicesId: this.state.devices.concat([data]).map(device => device._id)})
         this.setState((prevState, props) => {
           return {devices: prevState.devices.concat([data]), newDevice: undefined};
         });
       });
+    } else {
+      Http.patch("devices/" + device._id, device).then(()=>{
+        return this.loadDevices();
+      });
     }
+  }
+
+  deleteDevice(device) {
+    this.loadDevices();
   }
 
   cancelDevice(device) {

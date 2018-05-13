@@ -21,8 +21,8 @@ const common = {
   output: {
     //path: "static",//PATHS.build,
     //path: path.resolve(__dirname, 'static/js'),
-    filename: "static/js/client.js"/*,
-    publicPath: "/static/js/",*/
+    filename: "static/js/client.js",
+    publicPath: "/static/"
   },
   resolve: {
     extensions: [".js", ".jsx", ".css", ".html"],
@@ -83,12 +83,13 @@ switch (process.env.npm_lifecycle_event) {
       common, {
         devtool: "cheap-module-eval-source-map"
       },
-      configParts.setupCSS(PATHS.style),
+      configParts.setupCSS(PATHS.style)/*,
+      only if no express
       configParts.devServer({
         host: "localhost",
-        port: 5000,
+        port: 4000,
         entry: PATHS.client
-      })
+      })*/
     );
 }
 
