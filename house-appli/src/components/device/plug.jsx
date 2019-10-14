@@ -14,9 +14,9 @@ export class Plug extends Device {
   renderType() {
 
     return(
-      <div style={{margin: "20px"}} className={"flex-container--column item-fluid"}>
-        <label className="item-center" style={{fontSize:"2em"}}>{this.state.name}</label>
-        <i className="fa-5x item-center fas fa-plug" style={{color:"#009900"}}></i>
+      <div style={{margin: "20px"}} className={"flex-container--column item-fluid device-plug"}>
+        <label className="item-center">{this.state.name}</label>
+        <i className="fa-5x item-center fas fa-plug" ></i>
       </div>
     );
   }

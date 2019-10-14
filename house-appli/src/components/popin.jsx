@@ -32,7 +32,7 @@ export class Popin extends React.Component {
           </div>
           }
         </React.Fragment>
-        );
+      );
   }
 
   handleClick() {

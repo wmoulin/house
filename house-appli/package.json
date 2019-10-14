@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --progress",
     "build": "webpack",
     "stats": "webpack --profile --json > stats.json",
     "server": "node ./server.js"
@@ -13,14 +13,17 @@
   "author": "wmoulin",
   "license": "ISC",
   "dependencies": {
+    "assert": "^1.4.1",
     "express": "^4.16.3",
     "express-sse": "^0.5.0",
+    "mongodb": "^3.1.0-beta4",
     "mqtt": "^2.17.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "react-grid-layout": "^0.16.3",
     "react-router-dom": "^4.2.2",
-    "superagent": "^3.8.2"
+    "superagent": "^3.8.2",
+    "threerest": "^2.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -28,16 +31,16 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "0.1.13",
-    "css-loader": "0.25.0",
-    "extract-text-webpack-plugin": "1.0.1",
+    "css-loader": "^2",
     "html-loader": "^0.5.5",
-    "html-webpack-plugin": "2.22.0",
+    "html-webpack-plugin": "^3",
     "purifycss-webpack-plugin": "2.0.3",
     "react-hot-loader": "3.0.0-beta.6",
     "style-loader": "0.13.1",
-    "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1",
-    "webpack-merge": "^0.14.1",
-    "webpack-validator": "^3.0.0"
+    "webpack": "^4",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3",
+    "webpack-merge": "^4",
+    "webpack-validator": "^3"
   }
 }

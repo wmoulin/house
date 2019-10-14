@@ -16,7 +16,7 @@ export class Menu extends React.Component {
     render() {
       return(
         <React.Fragment>
-          <div className="menuPanel" ref={(elt) => {this.menuPanel = elt;}} style={{width: this.state.active ? "250px" : 0}}onClick={() => this.handleClick()} >
+          <div className="menuPanel" ref={(elt) => {this.menuPanel = elt;}} style={{width: this.state.active ? "250px" : 0}} onClick={() => this.handleClick()} >
             <button type="button" className="popin_close">Close</button>
             <Link to="/rooms" style={{margin: "50px 0"}}><button className="btn">Ajouter une pièce</button></Link>
           </div>

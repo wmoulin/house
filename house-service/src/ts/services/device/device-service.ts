@@ -1,8 +1,16 @@
-import { Service, Methods, NotFoundError } from "threerest";
-import { inject } from "../../inject/inject";
-import { DB_NAME } from "../../app-const";
+import { Service, Methods, Params, NotFoundError } from "threerest";
+import { DB_NAME, SSE_KEY } from "../../app-const";
 import { Injector } from "../../inject/injector";
 import { ObjectID } from "mongodb";
+import { Response } from "express";
+
+declare global {
+  namespace Express {
+    interface Response {
+      sseSend?: (data:any, evtName?:string) => void;
+    }
+  }
+}
 
 @Service.path("/devices")
 export default class DeviceService {
@@ -29,7 +37,15 @@ export default class DeviceService {
     return this.collection.findOne({_id: device["_id"]})
     .then((deviceToUpdate)=>{
       if (!deviceToUpdate) throw new NotFoundError();
-      return Object.assign(deviceToUpdate, device);
+      if(device && typeof(device.active) == "boolean" && device.active !== deviceToUpdate.active && deviceToUpdate.disabledTime) {
+        Injector.getRegistered(SSE_KEY).forEach((connexion: Response)=> {
+          connexion.sseSend({...deviceToUpdate, ...device}, "disabled");
+          setTimeout(()=>{
+            connexion.sseSend({...deviceToUpdate, ...device}, "enabled");
+          }, deviceToUpdate.disabledTime*1000)
+        });
+      }
+      return {...deviceToUpdate, ...device};
     })
     .then((deviceToUpdate)=>{
       return this.collection.updateOne({_id: new ObjectID(deviceToUpdate["_id"])}, deviceToUpdate).then( result => undefined);
@@ -38,23 +54,23 @@ export default class DeviceService {
   }
 
   @Methods.get("/:id")
-  get(param:{id:number}) {
-    return this.collection.findOne({_id: new ObjectID(param.id)}).then((device)=>{if (!device) throw new NotFoundError(); return device;});
+  get(@Params("id") id:number) {
+    return this.collection.findOne({_id: new ObjectID(id)}).then((device)=>{if (!device) throw new NotFoundError(); return device;});
   }
 
   @Methods.get("/:id/active")
-  getActive(param:{id:number}) {
-    return this.collection.findOne(Object.assign({}, ObjectID.isValid(param.id) ? {_id: new ObjectID(param.id)} : {customId: param.id})).then((device)=>{if (!device) throw new NotFoundError(); return device.active;});
+  getActive(@Params("id") id:number) {
+    return this.collection.findOne(Object.assign({}, ObjectID.isValid(id) ? {_id: new ObjectID(id)} : {customId: id})).then((device)=>{if (!device) throw new NotFoundError(); return device.active;});
   }
 
   @Methods.del("/:id")
-  delete(param:{id:number}) {
-    return this.collection.deleteOne({_id: new ObjectID(param.id)}).then((device)=>{if (!device) throw new NotFoundError(); return device;});
+  delete(@Params("id") id:number) {
+    return this.collection.deleteOne({_id: new ObjectID(id)}).then((device)=>{if (!device) throw new NotFoundError(); return device;});
   }
 }
 
 class Device {
-  constructor(public id:number, public customId:string, public name:string, public type:TYPE){};
+  constructor(public id:number, public customId:string, public name:string, public type:TYPE, public active:boolean, public disabledTime :number){};
 }
 
 enum TYPE {

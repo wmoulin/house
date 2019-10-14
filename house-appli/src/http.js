@@ -1,6 +1,6 @@
 
 
-import request from "superagent"
+import request from "superagent";
 
 export class Http {
 
@@ -11,8 +11,8 @@ export class Http {
     return request
    .post(Http.DOMAIN + url)
    .send(body)
-   .set('Content-Type', 'application/json')
-   .set('Accept', 'application/json')
+   .set(Http.token ? { Accept: 'application/json', 'Content-Type': 'application/json', Authorization: Http.token } : {Accept: 'application/json', 'Content-Type': 'application/json'})
+   .type('form')
    .then(function(res) {
       return JSON.stringify(res.body);
    }).catch((e) => {
@@ -20,11 +20,18 @@ export class Http {
    });
   }
 
+  static submitPost(url, body) {
+    return request
+   .post(Http.DOMAIN + url)
+   .send(body)
+   .type('form')
+   .set(Http.token ? { Accept: 'application/json', 'Content-Type': 'application/json', Authorization: Http.token } : {Accept: 'application/json', 'Content-Type': 'application/json'})
+  }
+
   static get(url) {
     return request
    .get(Http.DOMAIN + url)
-   .set('Content-Type', 'application/json')
-   .set('Accept', 'application/json')
+   .set(Http.token ? { Accept: 'application/json', 'Content-Type': 'application/json', Authorization: Http.token } : {Accept: 'application/json', 'Content-Type': 'application/json'})
    .then(function(res) {
       return res.body;
    }).catch((e) => {
@@ -48,8 +55,7 @@ export class Http {
     return request
     .patch(Http.DOMAIN + url)
     .send(body)
-    .set('Content-Type', 'application/json')
-    .set('Accept', 'application/json')
+    .set(Http.token ? { Accept: 'application/json', 'Content-Type': 'application/json', Authorization: Http.token } : {Accept: 'application/json', 'Content-Type': 'application/json'})
     .then(function(res) {
        return JSON.stringify(res.body);
     }).catch((e) => {
@@ -72,8 +78,7 @@ export class Http {
   static del(url) {
     request
    .del(Http.DOMAIN + url)
-   .set('Content-Type', 'application/json')
-   .set('Accept', 'application/json')
+   .set(Http.token ? { Accept: 'application/json', 'Content-Type': 'application/json', Authorization: Http.token } : {Accept: 'application/json', 'Content-Type': 'application/json'})
    .then(function(res) {
       return res.body;
    }).catch((e) => {

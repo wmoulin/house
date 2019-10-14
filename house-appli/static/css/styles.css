@@ -35,16 +35,16 @@
 
 /* popin */
 .black_overlay {
-  position: absolute;
+  position: fixed;
   top: 0%;
   left: 0%;
   width: 100%;
   height: 100%;
   background-color: black;
   z-index: 1001;
-  -moz-opacity: 0.8;
-  opacity: .80;
-  filter: alpha(opacity=80);
+  -moz-opacity: 0.6;
+  opacity: .60;
+  filter: alpha(opacity=60);
 }
 
 .popin_content {
@@ -59,11 +59,69 @@
   background-color: white;
   z-index: 1002;
   overflow: auto;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.popin-action-content {
+  position: relative;
+  overflow: visible;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
 .popin_close {
   right: 0;
   position: absolute;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.popin-action {
+  position: absolute;
+  transform: translateX(-108%) translateY(-30%);
+  z-index: 1002;
+}
+
+.popin-action::after{
+  content: '';
+  position: absolute;
+  left: 99%;
+  top: 12px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid white;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  clear: both;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.menu-action {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-action i {
+  padding-right: 0.5rem;
 }
 
 button {
@@ -72,7 +130,7 @@ button {
   color: #91c1f1 !important;
 }
 
-input[type=text], select {
+input[type=text], input[type=password], select {
   width: 100%;
   padding: 5px 0px;
   margin: 0;
@@ -84,13 +142,20 @@ input[type=text], select {
   transition: all 0.5s;
 }
 
-input[type=text]:focus, select:focus {
+input[type=text]:focus, input[type=password]:focus, select:focus {
   outline: none;
   text-indent: 10px;
   border-bottom: 1px solid #000 !important;
   font-weight: bold
 }
 
+form {
+  margin: 5rem;
+}
+
+form .row {
+  margin: 2rem 0;
+}
 .entry {
   margin: 10px 0px;
   user-select: none;
@@ -120,3 +185,115 @@ input[type=text]:focus, select:focus {
   border-bottom: 1px solid #000 !important;
   font-weight: bold
 }
+
+.device-card {
+  border: 1px solid black;
+  border-radius: 5px;
+  min-width: 22rem;
+  margin: 1em;
+  position: relative;
+}
+
+.device-card .menu {
+  margin: 1em 0.5rem;
+}
+
+.portal {
+  width: 20rem;
+  margin: auto;
+}
+
+.device label {
+  font-size: 3rem;
+}
+.device i {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #009900;
+}
+.device-card .content {
+  height: 100%;
+}
+.device-card .disabled_overlay {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 1001;
+  -moz-opacity: 0.6;
+  opacity: .60;
+  filter: alpha(opacity=60);
+  transform: translateY(-100%);
+}
+
+.device-plug label {
+  font-size: 3rem;
+}
+
+.device-plug i {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #009900;
+}
+
+/* spinner */
+.lds-ring {
+  position: relative;
+  left: 40%;
+  top: 40%;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.room-chip {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #555;
+	border-bottom: 25px solid transparent;
+}
+
+/* .room-chip::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid black;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  clear: both;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+} */

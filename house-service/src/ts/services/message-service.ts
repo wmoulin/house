@@ -1,4 +1,4 @@
-import { Service, Methods } from "threerest";
+import { Service, Methods, Body } from "threerest";
 
 @Service.path("/messages")
 export default class ServiceTitles {
@@ -9,12 +9,12 @@ export default class ServiceTitles {
   }
 
   @Methods.post("")
-  addMessage(param:{message: string}) {
+  addMessage(@Body() param:{message: string}) {
     return {"name": "test", "id": param};
   }
 
   @Methods.post("/search")
-  getMessages(param:{id:number}) {
+  getMessages(@Body() param:{id:number}) {
     return {"name": "test", "id": param};
   }
 }

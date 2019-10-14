@@ -1,0 +1,122 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.badge--success {
+  background-color:#3fa93f;
+}
+
+.badge--inverse {
+  background-color:#ccc;
+}
+
+.menuPanel {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white; /* Black*/
+  border-right: 1px solid black;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  display: flex;
+  flex-direction: column;
+}
+
+/* popin */
+.black_overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+
+.popin_content {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+}
+
+.popin_close {
+  right: 0;
+  position: absolute;
+}
+
+button {
+  font-weight: bold;
+  background: transparent !important;
+  color: #91c1f1 !important;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 5px 0px;
+  margin: 0;
+  display: inline-block;
+  border: 0px none;
+  border-bottom: 1px solid #ccc !important;
+  box-sizing: border-box;
+  box-shadow: none;
+  transition: all 0.5s;
+}
+
+input[type=text]:focus, select:focus {
+  outline: none;
+  text-indent: 10px;
+  border-bottom: 1px solid #000 !important;
+  font-weight: bold
+}
+
+.entry {
+  margin: 10px 0px;
+  user-select: none;
+  font-size: small;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.entry input[type=text], select {
+  font-size: large;
+  width: 100%;
+  padding: 5px 0px;
+  margin: 0;
+  display: inline-block;
+  border: 0px none;
+  border-bottom: 1px solid #ccc !important;
+  box-sizing: border-box;
+  box-shadow: none;
+  transition: all 0.5s;
+  background-color: transparent;
+}
+
+.entry input[type=text]:focus, select:focus {
+  outline: none;
+  text-indent: 10px;
+  border-bottom: 1px solid #000 !important;
+  font-weight: bold
+}

@@ -22,15 +22,15 @@ const common = {
     //path: "static",//PATHS.build,
     //path: path.resolve(__dirname, 'static/js'),
     filename: "static/js/client.js",
-    publicPath: "/static/"
+    publicPath: ""
   },
   resolve: {
     extensions: [".js", ".jsx", ".css", ".html"],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Make Leo roll",
-      template: "!!html-loader!./static/index.html"
+      title: "My little house",
+      template: "./static/index.html"
     })
   ],
   module: {
@@ -47,7 +47,7 @@ const common = {
       },
       {
         test: /\.html$/,
-        use: ["html-loader"]
+        loader: 'html-loader'
       }
     ]
   }
@@ -81,6 +81,9 @@ switch (process.env.npm_lifecycle_event) {
   default:
     config = merge(
       common, {
+        devServer: {
+          port: 9000,
+        },
         devtool: "cheap-module-eval-source-map"
       },
       configParts.setupCSS(PATHS.style)/*,

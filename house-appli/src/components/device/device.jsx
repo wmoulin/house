@@ -1,32 +1,58 @@
-import React from "react"
+import React from "react";
 import { Popin } from "../popin";
+import { AppContext } from "../../app-const";
+import { Menu } from "../simple-menu";
+import { Spinner } from "../spinner";
 import { Http } from "../../http";
-
 
 export class Device extends React.Component {
 
-  constructor(props) {
+  constructor(props, context) {
     super(props);
     this.state = {
       active: this.props.active || false,
+      disabled: false,
       edit: this.props.edit || false,
       name: this.props.name || "",
       id: this.props.id || "",
       type: this.props.type
     };
     this.form = null;
-    
+  }
+
+  componentDidMount() {
+    if(this.props.disabledTime) {
+      //console.log(this.context);
+      this.context.eventSource.addEventListener('disabled', (e) => {
+        let device = JSON.parse(e.data);
+        if(this.props.deviceId == device._id) {
+          this.setState({disabled : true}, () => {
+            setTimeout(()=> {
+              this.setState({disabled : false});
+            }, this.props.disabledTime*1000)
+          });
+          console.log("disabled receive data :", device);
+        }
+      }, false);
+    }
   }
 
   render() {
+
     return (
       <React.Fragment>
-        <div className={"flex-container"} style={{flexDirection: "row"}}>
+        <div className={"device-card"}>
+        <div className={"flex-container content"} style={{flexDirection: "row"}}>
           {this.renderType()}
-          <div className={""} style={{verticalAlign: "bottom", display: "inline", width: "40px", position: "relative", margin: "30px 10px"}}>
-            <i className="fa-2x fas fa-pencil-alt" style={{color:"#009900", position: "absolute", top: 0}} onClick={() => this.handleEditClick()}></i>
-            <i className="fa-2x fas fa-trash-alt item-fluid" style={{position: "absolute", bottom: 0}} onClick={() => this.handleDeleteClick()}></i>
+          <div>
+            <Menu className={"menu"}>
+              <button class="btn" onClick={() => this.handleEditClick()}><i className="fas fa-pencil-alt" ></i> Editer</button>
+              <button class="btn" onClick={() => this.handleDeleteClick()}><i className="fas fa-trash-alt item-fluid" ></i> Supprimer</button>
+            </Menu>
           </div>
+          
+        </div>
+        {this.state.disabled ? <div id="disab" className="disabled_overlay"><Spinner/></div> : null}
         </div>
         <Popin open={this.state.edit} onClose={this.handleCloseClick.bind(this)}>
         <form ref={(form) => this.form = form}>
@@ -49,6 +75,10 @@ export class Device extends React.Component {
               <label className={"entry"}>actif
                 <input type="checkbox" name="active" checked={this.state.active} onChange={()=> {this.setState({active: !this.state.active})}}/>
               </label>
+              <label className={"entry"}>temps de désactivation
+              <input type="number" name="disabledTime" step={1} min={0} max={30}
+                defaultValue={this.props.disabledTime} placeholder={"disabled time"} />
+              </label>
             </div>
             <div className={"flex-container"} style={{flexDirection: "row", justifyContent: "flex-end"}}>
               <button type="button" onClick={this.handleValidateClick.bind(this)}>Validate</button>
@@ -62,12 +92,14 @@ export class Device extends React.Component {
   }
 
   renderType() {
+
     let style = {
       color: this.state.active ? "#009900" : "#990000"
     }
+
     return(
-      <div style={{margin: "20px"}} className={"flex-container--column item-fluid"}>
-        <label className="item-center" style={{fontSize:"2em"}}>{this.state.name}</label>
+      <div style={{margin: "20px"}} className={"flex-container--column item-fluid device"}>
+        <label className="item-center" >{this.state.name}</label>
         <i className="fa-5x item-center fas fa-question" style={style}></i>
       </div>
     );
@@ -98,7 +130,7 @@ export class Device extends React.Component {
   handleValidateClick() {
     this.handleCloseClick();
     if (this.props.validate) {
-      this.props.validate({name: this.form.name.value, customId: this.form.customId.value, _id: this.props.deviceId, type: this.form.type.value, active: this.form.active.checked});
+      this.props.validate({name: this.form.name.value, customId: this.form.customId.value, _id: this.props.deviceId, type: this.form.type.value, active: this.form.active.checked, disabledTime: this.form.disabledTime.value});
     }
   }
 
@@ -132,5 +164,5 @@ export class Device extends React.Component {
 
 }
 
-
-Device.devicesTypes = [{label: "light", id: 1}, {label: "plug", id: 2}, {label: "portal", id: 3}];
+Device.contextType = AppContext;
+Device.devicesTypes = [{label: "light", id: 1}, {label: "plug", id: 2}, {label: "gate", id: 3}, {label: "pedestrian gate", id: 4}];

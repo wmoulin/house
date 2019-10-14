@@ -1,4 +1,4 @@
-import { Service, Methods, NotFoundError, RestError } from "threerest";
+import { Service, Methods, Params, NotFoundError, RestError } from "threerest";
 import { inject } from "../../inject/inject";
 import { DB_NAME } from "../../app-const";
 import { Injector } from "../../inject/injector";
@@ -43,15 +43,15 @@ export default class RoomService {
   }
 
   @Methods.get("/:id")
-  get(param:{id:number}) {
-    return this.collection.findOne({_id: new ObjectID(param.id)}).then((room)=>{if (!room) throw new NotFoundError(); return room;});
+  get(@Params("id") id:number) {
+    return this.collection.findOne({_id: new ObjectID(id)}).then((room)=>{if (!room) throw new NotFoundError(); return room;});
   }
 
   @Methods.del("/:id")
-  delete(param:{id:number}) {
-    return this.collection.deleteOne({_id: new ObjectID(param.id)})
+  delete(@Params("id") id:number) {
+    return this.collection.deleteOne({_id: new ObjectID(id)})
     .then((room)=>{if (!room) throw new NotFoundError();
-      return this.collection.deleteMany({_id: new ObjectID(param.id)})
+      return this.collection.deleteMany({_id: new ObjectID(id)})
       .then((device)=>{
         if (!device) throw new NotFoundError();
         return room;
@@ -60,8 +60,8 @@ export default class RoomService {
   }
 
   @Methods.get("/:id/devices")
-  getDevices(param:{id:number}) {
-    return this.collection.findOne({_id: new ObjectID(param.id)}).then((room)=>{if (!room) throw new NotFoundError(); return room;});
+  getDevices(@Params("id") id:number) {
+    return this.collection.findOne({_id: new ObjectID(id)}).then((room)=>{if (!room) throw new NotFoundError(); return room;});
   }
 }
 

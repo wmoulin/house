@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const PurifyCSSPlugin = require('purifycss-webpack-plugin');
 const path = require("path");
 
@@ -127,17 +126,15 @@ exports.clean = (path) => {
 exports.extractCSS = (paths) => {
   return {
     module: {
-      loaders: [{
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
-        include: paths
-      }]
+      rules: [
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
+        },
+      ],
     },
-    plugins: [
-      new ExtractTextPlugin('[name].[chunkhash].css')
-    ]
-  };
-}
+  }
+};
 
 // Suppression des portions de feuilles de style inutilisées
 exports.purifyCSS = (paths) => {

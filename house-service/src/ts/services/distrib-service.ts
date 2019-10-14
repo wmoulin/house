@@ -1,4 +1,4 @@
-import { Service, Methods } from "threerest";
+import { Service, Methods, Params } from "threerest";
 
 @Service.path("/distrib")
 export default class ServiceTitles {
@@ -9,12 +9,12 @@ export default class ServiceTitles {
   }
 
   @Methods.post("/:id/lunchs")
-  addLunch(param:{id:number}) {
-    return {"name": "test", "id": param};
+  addLunch(@Params("id") id:number) {
+    return {"name": "test", id};
   }
 
   @Methods.get("/:id/lunchs")
-  getLunchs(param:{id:number}) {
-    return {"name": "test", "id": param};
+  getLunchs(@Params("id") id:number) {
+    return {"name": "test", id};
   }
 }

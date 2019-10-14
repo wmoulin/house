@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+     version="1.1" baseProfile="full" viewBox="0 0 277 190"
+>
+
+  <defs
+     id="defs2883" />
+  <style
+     type="text/css"
+     media="screen"
+     id="style2189"><![CDATA[  
+    .portal-foreground {  
+        fill: black;
+        fill-opacity:1;
+        stroke: black;
+        stroke-width:0.94488192;
+        stroke-opacity:1;
+    }
+    .portal {  
+        width: 277px;
+        height: 190px;
+    }
+    ]]></style>
+  <defs>
+<symbol id="portal" class="portal"  viewBox="0 0 277 190" preserveAspectRatio="xMidYMid meet">
+
+  <rect class="portal-foreground"
+     style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;"
+     id="rect2887"
+     width="229.14001"
+     height="38.191006"
+     x="22.919001"
+     y="121.383"
+     rx="2.7755576e-17" />
+  <rect class="portal-foreground"
+     style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;"
+     id="rect2891"
+     width="229.14"
+     height="12.7303"
+     x="22.919001"
+     y="32.271099"
+     rx="2.7755599e-17"
+     ry="0" />
+  <rect class="portal-foreground"
+     style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;"
+     id="rect2909"
+     width="13.5299"
+     height="76.265602"
+     x="22.919001"
+     y="45.0014"
+     rx="2.7755599e-17" />
+  <rect class="portal-foreground"
+     style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;"
+     id="rect2913"
+     width="0.70710677"
+     height="1.767767"
+     x="34.648232"
+     y="128.4817"
+     rx="2.7755599e-17" />
+  <rect class="portal-foreground"
+     style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;"
+     id="rect2917"
+     width="12.0203"
+     height="75.956299"
+     x="49.088699"
+     y="45.426701"
+     rx="2.7755599e-17" />
+  <rect class="portal-foreground"
+     style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;"
+     id="rect2919"
+     width="12.2007"
+     height="75.956299"
+     x="74.368202"
+     y="45.426701"
+     rx="2.7755599e-17" />
+  <rect class="portal-foreground"
+     style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;"
+     id="rect2921"
+     width="12.3813"
+     height="75.956299"
+     x="99.647697"
+     y="45.426701"
+     rx="2.7755599e-17" />
+  <rect class="portal-foreground"
+     style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;"
+     id="rect2923"
+     width="25.280001"
+     height="75.840302"
+     x="124.927"
+     y="45.426701"
+     rx="2.7755599e-17" />
+  <rect class="portal-foreground"
+     style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;"
+     id="rect2925"
+     width="12.64"
+     height="75.840302"
+     x="162.84599"
+     y="45.426701"
+     rx="2.7755599e-17" />
+  <rect class="portal-foreground"
+     style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;"
+     id="rect2931"
+     width="12.64"
+     height="75.840302"
+     x="188.12601"
+     y="45.426701"
+     rx="2.7755599e-17" />
+  <rect class="portal-foreground"
+     style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;"
+     id="rect2933"
+     width="12.176"
+     height="76.265602"
+     x="213.869"
+     y="45.0014"
+     rx="2.7755599e-17" />
+  <rect class="portal-foreground"
+     style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;"
+     id="rect2935"
+     width="12.64"
+     height="75.840302"
+     x="238.685"
+     y="45.426701"
+     rx="2.7755599e-17" />
+  <rect class="portal-foreground"
+     style="stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;"
+     id="rect2937"
+     width="13.374023"
+     height="75.956299"
+     x="238.685"
+     y="45.426701"
+     rx="2.7755599e-17" />
+</defs>
+</svg>
